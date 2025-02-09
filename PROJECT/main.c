@@ -1,15 +1,16 @@
 #include <gpiod.h>
 #include <stdio.h>
 #include <unistd.h>
+#include "pindef.h"
 #include "inc.h"
 #define GPIO_CHIP "/dev/gpiochip4"  // Raspberry Pi 5 預設 GPIO Chip
-#define GPIO_PIN  7  // GPIO17
+#define GPIO_PIN  17  // GPIO17
 
 int main() {
     struct gpiod_chip *chip;
     struct gpiod_line *line;
     int ret;
-
+    printf("GPIO17_PIN %d\n", GPIO17_PIN);
     // 打開 GPIO chip
     chip = gpiod_chip_open(GPIO_CHIP);
     if (!chip) {

@@ -10,7 +10,8 @@ INC_DIR = PROJECT/INCLUDE
 
 # Files
 SRCS = $(SRC_DIR)/main.c \
-        $(SRC_DIR)/inc.c
+        $(SRC_DIR)/inc.c \
+		$(SRC_DIR)/pindef.h \
 
 OBJS = $(OBJ_DIR)/main.o \
        $(OBJ_DIR)/inc.o
