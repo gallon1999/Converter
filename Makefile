@@ -15,7 +15,7 @@ SRCS = $(SRC_DIR)/main.c \
 
 OBJS = $(OBJ_DIR)/main.o \
        $(OBJ_DIR)/inc.o
-EXEC = $(PROJNAME)_program
+EXEC = $(PROJNAME)_program.bin
 
 all: $(EXEC)
 
